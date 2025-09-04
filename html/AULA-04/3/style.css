@@ -46,6 +46,10 @@ img{
     width: 210px;
 }
 
+iframe{
+    height: 200px;
+    width: 210px;
+}
 footer{
     background-color: yellow;
     padding: 1px;
