@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitrine de Produtos: Moda, Essência e Estilos em Alta Definição</title>
+    <link rel="stylesheet" href="assets/style/main.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Vitrine 2025</h1>
+            <h2>Loja de produtos moderna feita para você</h2>
+            <input type="button" id="cart-button" onclick="openModal()">
+        </header>
+
+        <section id="grid" class="products">
+            <!-- produtos aqui -->
+        </section>
+
+        <div id="modal" style="display: none;">
+            
+            <div class="modal-content">
+                <span id="close-modal" class="close" onclick="closeModal()">X</span>
+                <h3>Carrinho de compras</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Produto 1</td>
+                            <td>R$ 50,00</td>
+                        </tr>
+                        <tr>
+                            <td>Produto 2</td>
+                            <td>R$ 75,00</td>
+                        </tr>
+                        <tr>
+                            <td>Produto 3</td>
+                            <td>R$ 100,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <p>Mais sobre nós:</p>
+            <a href="#">Instagram</a> | 
+            <a href="#">Facebook</a> | 
+            <a href="#">X</a> | 
+            <a href="#">Reddit</a>
+        </footer>
+    </main>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body {
+    font: 1em Ariel, Helvetica, sans-serif;
+    background-color: peachpuff;
+}
+
+article#caixa{
+    background-color: snow;
+    width: 400px;
+    margin: auto;
+    padding: 1px 10px;
+    box-shadow: 3px 5px 4px orange;
+    border-radius: 10px 20px 30px 40px;
+}
