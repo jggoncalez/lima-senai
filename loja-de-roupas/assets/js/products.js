@@ -16,7 +16,7 @@ fetch("database.json")
           ${prod.description}<br>
           R$ ${prod.price}
         </figcaption>
-        <input type="button" value="Comprar" onclick="addCart(${prod.id})">
+        <input type="button" value="Add ao carrinho" onclick="addCart('${prod.name}', ${prod.price} )">
       `;
 
       prodGrid.appendChild(fig);
