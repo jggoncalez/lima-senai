@@ -1,0 +1,99 @@
+/* --- Geral XP --- */
+body {
+    font-family: Tahoma, Verdana, sans-serif;
+    background-color: #c0c0c0; /* cinza típico XP */
+    margin: 0;
+}
+
+.container > footer {
+    color: white;
+}
+/* --- Cabeçalho --- */
+header {
+    background-color: #0a246a; /* azul XP mais suave */
+    color: #fff;
+    padding: 10px 20px;
+    border-bottom: 2px solid #000080;
+}
+
+header a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-pills .nav-link {
+    background-color: #d4d0c8; /* cinza dos botões XP */
+    color: #000080;
+    border: 1px solid #808080;
+    border-radius: 0;
+    margin-right: 2px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #0a246a;
+    color: #fff;
+}
+
+/* --- Main --- */
+main {
+    background-color: #c0c0c0;
+    padding: 20px 0;
+}
+
+.position-relative {
+    background-color: #d4d0c8;
+    border: 2px solid #808080;
+    padding: 20px;
+}
+
+/* --- Botões XP --- */
+.btn {
+    background-color: #d4d0c8;
+    color: #000;
+    border: 2px solid #808080;
+    border-radius: 0;
+    font-weight: bold;
+    box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #808080;
+}
+
+.btn-primary {
+    background-color: #0a246a;
+    color: #fff;
+    border: 2px solid #000080;
+}
+
+.btn-outline-secondary {
+    background-color: #d4d0c8;
+    color: #000080;
+    border: 2px solid #808080;
+}
+
+/* --- Imagens --- */
+img {
+    border: 2px solid #000080;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #0a246a;
+    border-top: 2px solid #000080;
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* --- Containers XP --- */
+.container {
+    border: 2px solid #808080;
+    background-color: #d4d0c8;
+    padding: 15px;
+}
+
