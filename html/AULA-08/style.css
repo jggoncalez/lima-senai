@@ -1,0 +1,52 @@
+body{
+    background-color: black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQspN2y9KRS3pQ3R971fIho5_pboSc_7WApoQ&s");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div.quadrado{
+    display: inline-block;
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+div#q1{
+    background-color: aqua;
+}
+
+div#q2{
+    background-image: radial-gradient(white, tomato);
+}
+div#q3{
+    background-image: url("img.jpg");
+    /*background-repeat: no-repeat;*/
+    /*background-repeat: repeat-x;*/
+    /*background-repeat: repeat-y;*/
+    background-repeat: repeat;
+
+    /*background-size: contain;*/
+    /*background-size: auto;*/
+    /*background-size: 50px;*/
+    background-size: cover;
+}
+
+div#dentro{
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+}
+
+div#fora{
+    height: 10vh;
+    background-color: red;
+    position: relative;
+}
