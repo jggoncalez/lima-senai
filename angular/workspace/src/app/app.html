@@ -1,0 +1,284 @@
+<style>
+  :host {
+    --deer-brown: oklch(45% 0.15 30);
+    --nara-gold: oklch(65% 0.18 50);
+    --forest-green: oklch(40% 0.12 130);
+    --soft-cream: oklch(95% 0.02 70);
+    --accent-orange: oklch(60% 0.2 40);
+
+    --gradient-warm: linear-gradient(135deg, var(--deer-brown) 0%, var(--accent-orange) 100%);
+    --gradient-forest: linear-gradient(180deg, var(--forest-green) 0%, rgba(0,0,0,0.1) 100%);
+
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--soft-cream);
+    padding: 0;
+    margin: 0;
+  }
+
+  .header {
+    background: var(--gradient-warm);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  .header h1 {
+    font-size: 3.5rem;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+  }
+
+  .header p {
+    font-size: 1.3rem;
+    margin: 0;
+    opacity: 0.95;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+
+  .section {
+    margin-bottom: 4rem;
+  }
+
+  .section h2 {
+    font-size: 2.5rem;
+    color: var(--deer-brown);
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+
+  .section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: var(--nara-gold);
+    border-radius: 2px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  }
+
+  .card-image {
+    width: 100%;
+    height: 250px;
+    background: var(--gradient-forest);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+  }
+
+  .card-content {
+    padding: 1.5rem;
+  }
+
+  .card h3 {
+    color: var(--deer-brown);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  .facts {
+    background: linear-gradient(135deg, rgba(139, 90, 43, 0.05), rgba(218, 165, 32, 0.05));
+    border-left: 5px solid var(--nara-gold);
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+  }
+
+  .facts h3 {
+    color: var(--deer-brown);
+    margin-top: 0;
+  }
+
+  .facts ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .facts li {
+    padding: 0.8rem 0;
+    color: #555;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+  }
+
+  .facts li::before {
+    content: '🦌';
+    margin-right: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .facts li:last-child {
+    border-bottom: none;
+  }
+
+  .footer {
+    background: var(--deer-brown);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 768px) {
+    .header h1 {
+      font-size: 2.5rem;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+    }
+
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<main class="main">
+  <div class="header">
+    <h1>🦌 Cervos Shika de Nara 🦌</h1>
+    <p>Uma homenagem aos sagrados cervos de Nara, Japão</p>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h2>Bem-vindo ao Paraíso dos Cervos</h2>
+      <div class="facts">
+        <h3>Os Cervos Sagrados</h3>
+        <ul>
+          <li>Considerados seres sagrados no xintoísmo japones</li>
+          <li>Mais de 1.000 cervos vivem livremente em Nara</li>
+          <li>Símbolo de paz, gentileza e beleza natural</li>
+          <li>Protegidos como Tesouro Natural do Japão desde 1957</li>
+          <li>Interagem pacificamente com visitantes do mundo inteiro</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Características Fascinantes</h2>
+      <div class="gallery">
+        <div class="card">
+          <div class="card-image">🦌</div>
+          <div class="card-content">
+            <h3>Aparência Elegante</h3>
+            <p>Cervos shika possuem corpos esbeltos, pelagem marrom-avermelhada e chifres magnificamente ramificados. Seus olhos grandes e doces refletem sua natureza gentil.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">🍁</div>
+          <div class="card-content">
+            <h3>Comportamento Dócil</h3>
+            <p>São herbívoros pacíficos que se alimentam de vegetação local. Apesar de selvagens, possuem personalidade mansa e gostam de interagir com as pessoas.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">🏯</div>
+          <div class="card-content">
+            <h3>Parte da Cultura</h3>
+            <p>Inseparáveis de Nara há séculos, esses cervos representam a harmonia entre natureza e cultura nas tradições japonesas milenares.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">🌳</div>
+          <div class="card-content">
+            <h3>Habitat Natural</h3>
+            <p>Vivem no Parque de Nara, um espaço verde de 660 hectares com árvores antigas, santuários e paisagens naturais preservadas há séculos.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">👨‍👩‍👧</div>
+          <div class="card-content">
+            <h3>Amigos dos Visitantes</h3>
+            <p>Os cervos shika são famosos por interagir com turistas. Fazem reverências elegantes para ganhar bolachinhas de cervos especialmente feitas.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">🌸</div>
+          <div class="card-content">
+            <h3>Beleza Eterna</h3>
+            <p>Cada estação traz nova beleza aos cervos e ao parque. Na primavera, a floração; no outono, as cores quentes refletem em suas pelagens.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Curiosidades Especiais</h2>
+      <div class="facts">
+        <h3>O Que Torna os Cervos de Nara Únicos</h3>
+        <ul>
+          <li>Os chifres dos machos adultos podem atingir até 70 cm de altura</li>
+          <li>Fazem reverências adoráveis quando estão pedindo comida</li>
+          <li>Conseguem reconhecer os visitantes regulares do parque</li>
+          <li>A população é cuidadosamente monitorada e mantida em equilíbrio</li>
+          <li>São mencionados em textos históricos japoneses desde o século VIII</li>
+          <li>Possuem personalidades individuais e preferências próprias</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>🦌 Honramos a beleza e a serenidade dos cervos shika de Nara 🦌</p>
+    <p>Criado com amor e admiração pela natureza japonesa ✨</p>
+  </div>
+</main>
+
+<router-outlet />
